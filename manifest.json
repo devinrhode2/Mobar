@@ -2,7 +2,7 @@
    "manifest_version": 2,
    "background": {
       "persistent": false,
-      "page": "background/background.html"
+      "scripts": ["background/background.js"]
    },
    "content_scripts": [
       {
@@ -18,7 +18,7 @@
          "run_at": "document_start"
       }
    ],
-   "description": "Scout - Google like a god",
+   "description": "MOBile sidebAR. 'Innovative' 'new' 'browsing experience'",
    "icons":
    {
       "128": "images/icon128.png",
@@ -31,7 +31,7 @@
    "web_accessible_resources": [],
    "incognito": "spanning",
    "minimum_chrome_version": "20",
-   "name": "Mobar, MOBile sidebAR. 'Innovative' 'new' 'browsing experience'",
+   "name": "Mobar",
    "homepage_url": "http://github.com/devinrhode2/Mobar",
    "permissions": [
      "<all_urls>",
