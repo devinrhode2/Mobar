@@ -5,9 +5,9 @@ if (top.location.href === undefined &&
   (function subFrameAddScript() {
     var s = document.createElement('script');
     s.textContent = "(" +
-    (function TheScoutAppFrameBandaidScript() {
-    /*THIS FUNCTION CANNOT CONTAIN THE CHARACTERS "//" AT ALL ANYWHERE, it gets turned into a string,
+    /*THE FOLLOWING FUNCTION CANNOT CONTAIN THE CHARACTERS "//" AT ALL ANYWHERE, it gets turned into a string,
     which gets rid of newlines, and then the // is interpreted as a comment ending the thread of execution.*/
+    (function TheScoutAppFrameBandaidScript() {
 
         function isDomain(domain) {
           return location.href.indexOf(domain) > -1;
